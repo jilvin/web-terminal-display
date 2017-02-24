@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Terminus";
+    src: url(../fonts/terminus-ttf-4.40.1/TerminusTTF-4.40.1.ttf) format("truetype");
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #000000;
+}
+body {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+p#startlines {
+  display: inline;
+  color: #ffffff;
+  font-family: Terminus;
+  font-size: 18px;
+}
+
+p#welcomelines {
+  display: inline;
+  color: #ffffff;
+  font-family: Terminus;
+  font-size: 18px;
+}
+
+/* CSS Blinking cursor / Mac terminal
+See : https://codepen.io/alandunning/pen/RWRrEW */
+
+#terminalcursor {
+  content: "";
+  display: inline-block;
+  background-color: #ffffff;
+  vertical-align: top;
+  width: 10px;
+  height: 18px;
+  margin-top: 4px;
+
+  /*
+  Animation paramaters:
+  blink = animation-name,
+  1s = animation-duration,
+  step-end = animation-timing-function,
+  infinite = animation-iteration-count
+  */
+
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
