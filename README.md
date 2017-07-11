@@ -3,13 +3,13 @@ Javascript that displays a text line like a UNIX terminal using css and html on 
 
 Uses: Bootstrap
 
-###Demo
+### Demo
 
 See:
 
 https://jilvin.github.io/web-terminal-display/
 
-###Use of Bootstrap
+### Use of Bootstrap
 If you are not interested in using bootstrap on your website, change style of body tag in the /css/style.css file as shown below.
 
 body {
